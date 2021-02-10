@@ -29,6 +29,7 @@ namespace Cash_Register
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.numberOfSwordsLabel = new System.Windows.Forms.Label();
             this.numberOfChestplatesLabel = new System.Windows.Forms.Label();
             this.numberOfHammersLabel = new System.Windows.Forms.Label();
@@ -82,6 +83,8 @@ namespace Cash_Register
             // 
             // calculateTotalButton
             // 
+            this.calculateTotalButton.ForeColor = System.Drawing.Color.White;
+            this.calculateTotalButton.Image = global::Cash_Register.Properties.Resources.medieval_button_art;
             this.calculateTotalButton.Location = new System.Drawing.Point(75, 145);
             this.calculateTotalButton.Name = "calculateTotalButton";
             this.calculateTotalButton.Size = new System.Drawing.Size(215, 37);
@@ -140,6 +143,8 @@ namespace Cash_Register
             // 
             // calculateChangeButton
             // 
+            this.calculateChangeButton.ForeColor = System.Drawing.Color.White;
+            this.calculateChangeButton.Image = global::Cash_Register.Properties.Resources.medieval_button_art;
             this.calculateChangeButton.Location = new System.Drawing.Point(75, 322);
             this.calculateChangeButton.Name = "calculateChangeButton";
             this.calculateChangeButton.Size = new System.Drawing.Size(215, 37);
@@ -159,6 +164,8 @@ namespace Cash_Register
             // 
             // printReceiptButton
             // 
+            this.printReceiptButton.ForeColor = System.Drawing.Color.White;
+            this.printReceiptButton.Image = global::Cash_Register.Properties.Resources.medieval_button_art;
             this.printReceiptButton.Location = new System.Drawing.Point(75, 401);
             this.printReceiptButton.Name = "printReceiptButton";
             this.printReceiptButton.Size = new System.Drawing.Size(215, 37);
@@ -233,6 +240,8 @@ namespace Cash_Register
             // 
             // newOrderButton
             // 
+            this.newOrderButton.ForeColor = System.Drawing.Color.White;
+            this.newOrderButton.Image = global::Cash_Register.Properties.Resources.medieval_button_art;
             this.newOrderButton.Location = new System.Drawing.Point(500, 401);
             this.newOrderButton.Name = "newOrderButton";
             this.newOrderButton.Size = new System.Drawing.Size(215, 37);
@@ -268,8 +277,9 @@ namespace Cash_Register
             this.Controls.Add(this.numberOfHammersLabel);
             this.Controls.Add(this.numberOfChestplatesLabel);
             this.Controls.Add(this.numberOfSwordsLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Cash Register";
+            this.Text = "Hunters Blacksmith Shop";
             this.ResumeLayout(false);
             this.PerformLayout();
 

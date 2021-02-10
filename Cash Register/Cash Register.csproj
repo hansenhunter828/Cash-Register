@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconfactory-Copland-4-Anvil.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\420877__inspectorj__digging-ice-hammer-b.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\554841__lucish__cha-ching.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\351304__deleted-user-96253__cha-ching.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\166690__dersuperanton__printer.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345056__azumarill__epson-receipt-printer3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medieval button art.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

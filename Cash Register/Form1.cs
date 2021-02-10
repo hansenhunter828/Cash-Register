@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace Cash_Register
 {
     public partial class Form1 : Form
     {
+        SoundPlayer menuSelect;
+        SoundPlayer sale;
+        SoundPlayer printerNoise;
+
+
         double swordPrice = 5.03;
         double chestplatePrice = 10.75;
         double hammerPrice = 3.37;
@@ -31,10 +37,16 @@ namespace Cash_Register
         public Form1()
         {
             InitializeComponent();
+
+            menuSelect = new SoundPlayer(Properties.Resources.menu_select);
+            sale = new SoundPlayer(Properties.Resources.Print_Receipt);
+            printerNoise = new SoundPlayer(Properties.Resources.Printer_Noise);
         }
 
         private void calculateTotalButton_Click(object sender, EventArgs e)
         {
+            menuSelect.Play();
+
             try
             {
                 swordAmount = Convert.ToInt32(numberOfSwordsTextbox.Text);
@@ -76,6 +88,8 @@ namespace Cash_Register
 
         private void calculateChangeButton_Click(object sender, EventArgs e)
         {
+            sale.Play();
+
             try
             {
                 tenderedAmount = Convert.ToInt32(tenderedTextbox.Text);
@@ -106,6 +120,8 @@ namespace Cash_Register
 
         private void printReceiptButton_Click(object sender, EventArgs e)
         {
+            printerNoise.Play();
+
             receiptLabel.Text = "        Hunters Blacksmith";
             Refresh();
             Thread.Sleep(500);
@@ -159,6 +175,8 @@ namespace Cash_Register
 
         private void newOrderButton_Click(object sender, EventArgs e)
         {
+            menuSelect.Play();
+
             swordAmount = 0;
             chestplateAmount = 0;
             hammerAmount = 0;
